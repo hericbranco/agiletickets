@@ -9,7 +9,7 @@ public class SessaoTest {
 	private Sessao sessao;
 	
 	@Before
-	public void contruct(){
+	public void setUp(){
 		sessao = new Sessao();
 	}
 	
