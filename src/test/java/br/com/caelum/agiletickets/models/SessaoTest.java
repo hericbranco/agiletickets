@@ -24,14 +24,6 @@ public class SessaoTest {
 	}
 
 	@Test
-	public void deveVender1ingressoSeHa2vagas() throws Exception {
-
-        sessao.setTotalIngressos(2);
-
-        assertThat(sessao.podeReservar(1), is(equalTo(true)));
-	}
-
-	@Test
 	public void naoDeveVender3ingressoSeHa2vagas() throws Exception {
 
 		sessao.setTotalIngressos(2);
