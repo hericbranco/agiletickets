@@ -84,6 +84,7 @@
 		<war destfile="${output.dir}/${project.name}.war">
 			<zipfileset dir="${webapp.dir}" />
 		</war>
+		<move file="${build.dir}/META-INF/${persistence}" tofile="${build.dir}/META-INF/persistence.xml" />
 	</target>
 
 	<!-- ================================= 
@@ -106,5 +107,5 @@
 		<mkdir dir="${output.dir}/reports" />
 		<ivy:report todir="${output.dir}/reports" />
 	</target>
-
+	<property name="persistence" value="persistence.xml"/>
 </project>
